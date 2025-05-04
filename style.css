@@ -88,8 +88,6 @@ body{
         background-image: url(bg.png);
         background-size: 100%;
         background-position: top center;
-
-
 }
 main{
     width: min(1200px, 90vw);
@@ -139,4 +137,27 @@ main{
 }
 .slider .item:hover{
     filter: grayscale(0);
+}
+/* title-link */
+/* Keep title styling consistent while making it clickable */
+.title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: add a subtle hover effect that doesn't change the main styling */
+.title-link:hover .card-title {
+    color: #dc3545; /* Optional: change to your brand color */
+}
+
+/* Make sure the card title maintains proper styling */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
