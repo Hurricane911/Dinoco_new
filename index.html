@@ -40,11 +40,20 @@
             </div>
         </div>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-3">
-            <button class="navbar-toggler border-0 font-weight-bold" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 py-2">
+            <!-- Add a brand/logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- <img src="DINOCO LOGO MAIN.jpg" height="30" alt="Dinoco Logo"> -->
+            </a>
+            
+            <!-- Update toggler button with correct Bootstrap 5 attributes -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
+            <!-- The collapsible navbar content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
@@ -329,7 +338,20 @@
             </div>
             <!-- Copyright -->
         </footer>
+        
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<div class="audio-control position-fixed bottom-0 end-0 m-3">
+    <audio id="backgroundMusic" muted loop>
+        <source src="audio/LE SSERAFIM (르세라핌) CRAZY [MUSIC AUDIO].mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="btn btn-sm btn-outline-dark" onclick="enableMusic()">
+        <i class="fa fa-music"></i> Enable Music
+    </button>
+</div>
+<script src="js_folder/music_player.js"></script>
+
 </html>
